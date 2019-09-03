@@ -1,0 +1,574 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "bible challenge",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "please stop",
+                        "shut up",
+                        "stop it immediately",
+                        "please stop this skill",
+                        "stop this skill",
+                        "alexa stop",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "QuotesIntent",
+                    "slots": [
+                        {
+                            "name": "mood",
+                            "type": "MoodIntent",
+                            "samples": [
+                                "tell me a {mood} one",
+                                "how about a {mood} {quote}",
+                                "give me a {mood} one",
+                                "{mood} ",
+                                "a {mood} one against {target}",
+                                "{mood} {quote}",
+                                "give me a {mood} {quote} about {target}"
+                            ]
+                        },
+                        {
+                            "name": "quote",
+                            "type": "QuoteIntent",
+                            "samples": [
+                                "tell me a {quote}",
+                                "feeling kind of {quote}",
+                                "that {quote} about {target}",
+                                "a {mood} {quote}",
+                                "{mood} {quote}",
+                                "{quote}",
+                                "give me a {quote}"
+                            ]
+                        },
+                        {
+                            "name": "target",
+                            "type": "AMAZON.Animal",
+                            "samples": [
+                                "{mood} {target}",
+                                "{quote} about {target} was {mood}",
+                                "{mood} {quote} about {target}",
+                                "how about a {mood} {quote} about {target}",
+                                "how about {target}",
+                                "what about about {target}",
+                                "tell me about {target}",
+                                "{target}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{target}",
+                        "{quote}",
+                        "{mood}",
+                        "give me a {mood} {quote} against {target}",
+                        "{quote} about {target}",
+                        "wasn't there some {mood} stuff about {target}",
+                        "what about that one {mood} {quote}",
+                        "what about the {mood} {quote}",
+                        "{mood} {quote} about {target} ",
+                        "tell me a {mood} {quote} about {target}",
+                        "how about a {mood} one",
+                        "recite a {mood} {quote}",
+                        "tell me a {mood} {quote}",
+                        "recite a {quote}",
+                        "Tell me a {quote}",
+                        "{mood} {quote}",
+                        "Give me a {mood} {quote}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+                        "redo",
+                        "start from scratch",
+                        "start over",
+                        "redo skill",
+                        "back to the beginning",
+                        "restart"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "MoodIntent",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Sexist",
+                                "synonyms": [
+                                    "male chauvinist pig",
+                                    "misogynist",
+                                    "chauvinist pig",
+                                    "chauvinist",
+                                    "male supremacist",
+                                    "male chauvinist",
+                                    "anti-feminist",
+                                    "woman-hater",
+                                    "female bashing",
+                                    "attitude against women",
+                                    "prejudice against women",
+                                    "stereo-type",
+                                    "sex discrimination",
+                                    "old fashioned",
+                                    "feminist"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Immoral",
+                                "synonyms": [
+                                    "underhand",
+                                    "sinful",
+                                    "perverted",
+                                    "dissolute",
+                                    "debauched",
+                                    "degenerate",
+                                    "vile",
+                                    "corrupt",
+                                    "dishonest",
+                                    "unconscionable",
+                                    "depraved",
+                                    "shameless",
+                                    "unchaste",
+                                    "devious",
+                                    "base",
+                                    "vilenefarious",
+                                    "fraudulent",
+                                    "unscrupulous",
+                                    "evil",
+                                    "wicked",
+                                    "morally",
+                                    "bad",
+                                    "unethical"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Silly",
+                                "synonyms": [
+                                    "what in the heck",
+                                    "what the hell",
+                                    "what the fuck",
+                                    "what the fudge",
+                                    "wtf",
+                                    "immature",
+                                    "lamebrained",
+                                    "cretinous",
+                                    "crazy",
+                                    "errantic",
+                                    "doltish",
+                                    "featherbrained",
+                                    "frivolous",
+                                    "witless",
+                                    "mindless",
+                                    "brainless",
+                                    "idiotic",
+                                    "unintelligent",
+                                    "stupid",
+                                    "foolish"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "QuoteIntent",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "evil",
+                                "synonyms": [
+                                    "peccable",
+                                    "flagitious",
+                                    "egregious",
+                                    "bastardly",
+                                    "dastardly",
+                                    "crooked",
+                                    "warped",
+                                    "lowdown",
+                                    "execrable",
+                                    "contemptible",
+                                    "odious",
+                                    "heinous",
+                                    "despicable",
+                                    "shocking",
+                                    "atrocious",
+                                    "black-hearted",
+                                    "fiendsih",
+                                    "demonic",
+                                    "malevolent",
+                                    "malicious",
+                                    "vicious",
+                                    "sinister",
+                                    "nefarious",
+                                    "villainous",
+                                    "degenerate",
+                                    "depraved",
+                                    "ignoble",
+                                    "vile",
+                                    "ungodly",
+                                    "unholy",
+                                    "wrongful",
+                                    "morally wrong",
+                                    "immoral",
+                                    "wicked",
+                                    "calamity",
+                                    "mean-spirited",
+                                    "catastrophe",
+                                    "pain",
+                                    "harm",
+                                    "destructful",
+                                    "so much evil",
+                                    "vengeful",
+                                    "petty god",
+                                    "too horrible",
+                                    "torture",
+                                    "sadist",
+                                    "sadistic",
+                                    "demonic",
+                                    "evil",
+                                    "mean",
+                                    "terrible",
+                                    "unimaginable",
+                                    "worst",
+                                    "bad",
+                                    "horrible"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Contradiction",
+                                "synonyms": [
+                                    "idiotic",
+                                    "laughable",
+                                    "wacky",
+                                    "flat contradiction",
+                                    "negation",
+                                    "proven wrong",
+                                    "scientifically unsound",
+                                    "proven wrong",
+                                    "false",
+                                    "illogical",
+                                    "conflict",
+                                    "discrepancy",
+                                    "disagreement",
+                                    "variance",
+                                    "go against each other",
+                                    "direct opposite",
+                                    "opposite",
+                                    "opposite tmeanings",
+                                    "mutually exclusive",
+                                    "opposite things",
+                                    "mistake",
+                                    "logical fallacy",
+                                    "fallacy",
+                                    "question",
+                                    "conflicting ideas"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Verse",
+                                "synonyms": [
+                                    "fable",
+                                    "tale",
+                                    "story",
+                                    "sonnet",
+                                    "lyric",
+                                    "limmerick",
+                                    "ballad",
+                                    "rythm",
+                                    "paragraph",
+                                    "quote",
+                                    "chapter",
+                                    "passage",
+                                    "poem",
+                                    "stanza",
+                                    "stanzas",
+                                    "verses"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AMAZON.Animal",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "animal",
+                                "synonyms": [
+                                    "bipde",
+                                    "vertabre",
+                                    "vermin",
+                                    "herbivore",
+                                    "carnivore",
+                                    "domestic animal",
+                                    "livestock",
+                                    "insects",
+                                    "jungle animals",
+                                    "prey",
+                                    "predators",
+                                    "beasts",
+                                    "creatures",
+                                    "wild things",
+                                    "farm animals",
+                                    "pet"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "children",
+                                "synonyms": [
+                                    "pure",
+                                    "pure hearted",
+                                    "sinless",
+                                    "blameless",
+                                    "innocent",
+                                    "before puberty",
+                                    "adolescent",
+                                    "pre-teen",
+                                    "preteen",
+                                    "teenage",
+                                    "babies",
+                                    "baby",
+                                    "teenagers",
+                                    "youth",
+                                    "youngen",
+                                    "toddler",
+                                    "infant",
+                                    "first born",
+                                    "twins",
+                                    "daughter",
+                                    "son",
+                                    "kids",
+                                    "child"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slaves",
+                                "synonyms": [
+                                    "human ownership",
+                                    "own a human",
+                                    "field hand",
+                                    "prisoner",
+                                    "involuntary servant",
+                                    "gladiator",
+                                    "darker skinned",
+                                    "colored",
+                                    "nigga",
+                                    "nigger",
+                                    "attendant",
+                                    "endentured servant",
+                                    "servant",
+                                    "bondswoman",
+                                    "bondsman",
+                                    "human property",
+                                    "african-american",
+                                    "african american",
+                                    "black folks",
+                                    "black people",
+                                    "enslaved"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gays",
+                                "synonyms": [
+                                    "sexually deviant",
+                                    "lgbtqia",
+                                    "lgbtq",
+                                    "in transition",
+                                    "transexual",
+                                    "transgender",
+                                    "hermaphadite",
+                                    "trans",
+                                    "intersex",
+                                    "dyke",
+                                    "lesbian",
+                                    "ass packer",
+                                    "sissy",
+                                    "fudge pucker",
+                                    "queer",
+                                    "fag",
+                                    "faggot",
+                                    "bisexual",
+                                    "bi-sexual",
+                                    "gay",
+                                    "homo",
+                                    "homo sexual",
+                                    "homo-sexual"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Women",
+                                "synonyms": [
+                                    "woman studies",
+                                    "feminazi",
+                                    "feminist",
+                                    "lady friend",
+                                    "girl friend",
+                                    "wife",
+                                    "wives",
+                                    "girlfriend",
+                                    "sister",
+                                    "mother",
+                                    "mom",
+                                    "aunt",
+                                    "aunties",
+                                    "grannies",
+                                    "grannie",
+                                    "loli",
+                                    "lolita",
+                                    "girl",
+                                    "opposite sex",
+                                    "women",
+                                    "thot",
+                                    "woman",
+                                    "girls",
+                                    "female"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "QuotesIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.327997335916"
+                    },
+                    "slots": [
+                        {
+                            "name": "mood",
+                            "type": "MoodIntent",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.327997335916.925886427904",
+                                "elicitation": "Elicit.Slot.1132675057610.706773956548"
+                            }
+                        },
+                        {
+                            "name": "quote",
+                            "type": "QuoteIntent",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1132675057610.994847491646"
+                            }
+                        },
+                        {
+                            "name": "target",
+                            "type": "AMAZON.Animal",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.327997335916.286466004626",
+                                "elicitation": "Elicit.Slot.327997335916.286466004626"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1132675057610.706773956548",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do not be shy, pick the topic. You wanna hear evil verses, a wacky one or something scientifically untrue. Pick your poison."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "What kind of disturbing topic would you like. You can say things like silly things about dogs, cruel punishments for innocents or even immoral verses about slavery."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1132675057610.994847491646",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Would form would you like it in. You can say verse, chapter or story"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.327997335916.286466004626",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "God picks on a lot creatures, what target did you have in mind. You can say things like feminist, gay or african american"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "And what poor creature do you want to pick one today. You can say animal, woman, homosexual or things like that."
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.327997335916",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "did you say a {mood} {quote} involving {target}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Did you say a {mood} {quote} about {target} "
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.327997335916.925886427904",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Did you say {mood}"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.327997335916.286466004626",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You focused on {target} as the target right?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Did I hear you right, did you say {target} . Poor thing."
+                    }
+                ]
+            }
+        ]
+    }
+}
