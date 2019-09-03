@@ -8,10 +8,10 @@ const LaunchRequestHandler = {
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speechText = 'Welcome Moorhead Students, would you like to hear some aweful true facts about the bible. You can say things like tell me a cruel verse about women.';
+        const speechText = 'Welcome Moorhead University Students to the atheist bible challenge, would you like to test your faith by hearing some aweful true facts about the bible. You can say things like tell me a cruel verse about women.';
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt('did you ladies hear anything I said')
+            .reprompt('I didnt catch that, you idiots in the background were talking. You can say things like give me a silly verse about donkeys')
             .getResponse();
     }
 };
@@ -34,11 +34,11 @@ const HelpIntentHandler = {
             && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent';
     },
     handle(handlerInput) {
-        const speechText = 'You can ask me any question you have about the bible. Or search for something specific?';
+        const speechText = 'You can ask me any question you have about the bible. Or search for something specific? Or would you rather plug your fingers in your ear and whisper Jesus loves me';
 
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speechText)
+            .reprompt('What the hell are you talking about, please ask me something relevant like, give me a weird quote about Jesus')
             .getResponse();
     }
 };
@@ -49,7 +49,7 @@ const CancelAndStopIntentHandler = {
                 || handlerInput.requestEnvelope.request.intent.name === 'AMAZON.StopIntent');
     },
     handle(handlerInput) {
-        const speechText = 'Goodbye!';
+        const speechText = 'Did it get too real for you?';
         return handlerInput.responseBuilder
             .speak(speechText)
             .getResponse();
